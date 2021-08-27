@@ -235,12 +235,12 @@ $EndComp
 $Comp
 L power:GND #PWR0108
 U 1 1 612C55C1
-P 3300 7050
-F 0 "#PWR0108" H 3300 6800 50  0001 C CNN
-F 1 "GND" V 3305 6922 50  0000 R CNN
-F 2 "" H 3300 7050 50  0001 C CNN
-F 3 "" H 3300 7050 50  0001 C CNN
-	1    3300 7050
+P 3300 6850
+F 0 "#PWR0108" H 3300 6600 50  0001 C CNN
+F 1 "GND" V 3305 6722 50  0000 R CNN
+F 2 "" H 3300 6850 50  0001 C CNN
+F 3 "" H 3300 6850 50  0001 C CNN
+	1    3300 6850
 	0    1    1    0   
 $EndComp
 Text GLabel 2800 2100 2    50   Input ~ 0
@@ -249,17 +249,6 @@ Text GLabel 2800 1800 2    50   Output ~ 0
 RGB
 Text GLabel 3300 6950 0    50   Output ~ 0
 RGB
-$Comp
-L power:VCC #PWR0109
-U 1 1 612C65E7
-P 3300 6850
-F 0 "#PWR0109" H 3300 6700 50  0001 C CNN
-F 1 "VCC" V 3315 6977 50  0000 L CNN
-F 2 "" H 3300 6850 50  0001 C CNN
-F 3 "" H 3300 6850 50  0001 C CNN
-	1    3300 6850
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:VCC #PWR0110
 U 1 1 612C7E8F
@@ -384,9 +373,9 @@ Wire Wire Line
 Wire Wire Line
 	4250 4600 4150 4600
 Connection ~ 4150 4600
-Text GLabel 4900 4100 1    50   Input ~ 0
+Text GLabel 2250 6900 0    50   Input ~ 0
 PB3
-Text GLabel 5250 4100 1    50   Input ~ 0
+Text GLabel 2250 7000 0    50   Input ~ 0
 PB4
 Wire Wire Line
 	4900 5200 4900 4600
@@ -501,6 +490,28 @@ F 1 "RGB" H 3528 6885 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3500 6950 50  0001 C CNN
 F 3 "~" H 3500 6950 50  0001 C CNN
 	1    3500 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6129FB48
+P 3300 7050
+F 0 "#PWR?" H 3300 6900 50  0001 C CNN
+F 1 "+5V" H 3315 7223 50  0000 C CNN
+F 2 "" H 3300 7050 50  0001 C CNN
+F 3 "" H 3300 7050 50  0001 C CNN
+	1    3300 7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J4
+U 1 1 612A3118
+P 2450 6900
+F 0 "J4" H 2478 6876 50  0000 L CNN
+F 1 "PB3|PB4" H 2350 6700 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2450 6900 50  0001 C CNN
+F 3 "~" H 2450 6900 50  0001 C CNN
+	1    2450 6900
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
