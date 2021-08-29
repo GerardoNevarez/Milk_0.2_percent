@@ -552,7 +552,7 @@ F 3 "" H 1700 7450 50  0001 C CNN
 	1    1700 7450
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1300 7450 0    50   Input ~ 0
+Text GLabel 1050 7450 0    50   Input ~ 0
 RST
 $Comp
 L Mechanical:MountingHole_Pad H3
@@ -567,4 +567,31 @@ F 3 "~" H 4500 7800 50  0001 C CNN
 $EndComp
 Text GLabel 4400 7800 0    50   Input ~ 0
 RST
+Wire Wire Line
+	1050 7450 1200 7450
+$Comp
+L Device:R R6
+U 1 1 612BC4CA
+P 1200 7600
+F 0 "R6" H 1050 7650 50  0000 L CNN
+F 1 "5.1K" H 950 7550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1130 7600 50  0001 C CNN
+F 3 "~" H 1200 7600 50  0001 C CNN
+	1    1200 7600
+	1    0    0    -1  
+$EndComp
+Connection ~ 1200 7450
+Wire Wire Line
+	1200 7450 1300 7450
+$Comp
+L power:+5V #PWR0118
+U 1 1 612BCE38
+P 1200 7750
+F 0 "#PWR0118" H 1200 7600 50  0001 C CNN
+F 1 "+5V" V 1215 7878 50  0000 L CNN
+F 2 "" H 1200 7750 50  0001 C CNN
+F 3 "" H 1200 7750 50  0001 C CNN
+	1    1200 7750
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
