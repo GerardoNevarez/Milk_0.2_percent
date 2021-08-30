@@ -404,10 +404,10 @@ F 3 "~" H 4950 6600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x03_Female J3
+L Connector:Conn_01x03_Female J2
 U 1 1 5CCEB648
 P 3700 7300
-F 0 "J3" H 3728 7326 50  0000 L CNN
+F 0 "J2" H 3728 7326 50  0000 L CNN
 F 1 "RGB" H 3728 7235 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3700 7300 50  0001 C CNN
 F 3 "~" H 3700 7300 50  0001 C CNN
@@ -424,28 +424,6 @@ F 2 "" H 3500 7400 50  0001 C CNN
 F 3 "" H 3500 7400 50  0001 C CNN
 	1    3500 7400
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J4
-U 1 1 612A3118
-P 2650 7250
-F 0 "J4" H 2678 7226 50  0000 L CNN
-F 1 "PB3|PB4" H 2550 7050 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2650 7250 50  0001 C CNN
-F 3 "~" H 2650 7250 50  0001 C CNN
-	1    2650 7250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 612D4988
-P 4500 7200
-F 0 "H1" V 4350 7200 50  0000 L CNN
-F 1 "Switch Pin 1" V 4500 7350 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 4500 7200 50  0001 C CNN
-F 3 "~" H 4500 7200 50  0001 C CNN
-	1    4500 7200
-	0    1    1    0   
 $EndComp
 $Comp
 L Switch:SW_Push SW1
@@ -507,21 +485,6 @@ Text GLabel 2650 3750 2    50   Input ~ 0
 PB0
 Text GLabel 2650 3850 2    50   Input ~ 0
 PB1
-$Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 612DFE3A
-P 4500 7500
-F 0 "H2" V 4350 7500 50  0000 L CNN
-F 1 "Switch Pin 1" V 4500 7650 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 4500 7500 50  0001 C CNN
-F 3 "~" H 4500 7500 50  0001 C CNN
-	1    4500 7500
-	0    1    1    0   
-$EndComp
-Text GLabel 4400 7200 0    50   Input ~ 0
-PB0
-Text GLabel 4400 7500 0    50   Input ~ 0
-PB1
 Text GLabel 5500 4350 1    50   Input ~ 0
 PB3
 Text GLabel 5850 4350 1    50   Input ~ 0
@@ -537,10 +500,6 @@ F 3 "~" H 1500 7650 50  0001 C CNN
 	1    1500 7450
 	1    0    0    -1  
 $EndComp
-Text GLabel 2450 7350 0    50   Input ~ 0
-PB4
-Text GLabel 2450 7250 0    50   Input ~ 0
-PB3
 $Comp
 L power:GND #PWR0107
 U 1 1 612C4442
@@ -553,19 +512,6 @@ F 3 "" H 1700 7450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 1050 7450 0    50   Input ~ 0
-RST
-$Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 612C7A56
-P 4500 7800
-F 0 "H3" V 4350 7800 50  0000 L CNN
-F 1 "Reset" V 4500 7950 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 4500 7800 50  0001 C CNN
-F 3 "~" H 4500 7800 50  0001 C CNN
-	1    4500 7800
-	0    1    1    0   
-$EndComp
-Text GLabel 4400 7800 0    50   Input ~ 0
 RST
 Wire Wire Line
 	1050 7450 1200 7450
@@ -593,5 +539,50 @@ F 2 "" H 1200 7750 50  0001 C CNN
 F 3 "" H 1200 7750 50  0001 C CNN
 	1    1200 7750
 	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x08_Female J3
+U 1 1 612C5061
+P 2150 2650
+F 0 "J3" H 2178 2626 50  0000 L CNN
+F 1 "DIP-8_W7.62mm_Socket" H 2178 2535 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 2150 2650 50  0001 C CNN
+F 3 "~" H 2150 2650 50  0001 C CNN
+	1    2150 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1950 2750 0    50   Input ~ 0
+PB0
+Text GLabel 1950 2850 0    50   Input ~ 0
+PB1
+Text GLabel 1950 2950 0    50   Output ~ 0
+RGB
+$Comp
+L power:+5V #PWR?
+U 1 1 612C72C8
+P 1950 3050
+F 0 "#PWR?" H 1950 2900 50  0001 C CNN
+F 1 "+5V" H 1965 3223 50  0000 C CNN
+F 2 "" H 1950 3050 50  0001 C CNN
+F 3 "" H 1950 3050 50  0001 C CNN
+	1    1950 3050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1950 2350 0    50   Input ~ 0
+RST
+Text GLabel 1950 2450 0    50   Input ~ 0
+PB3
+Text GLabel 1950 2550 0    50   Input ~ 0
+PB4
+$Comp
+L power:GND #PWR?
+U 1 1 612C7D5C
+P 1950 2650
+F 0 "#PWR?" H 1950 2400 50  0001 C CNN
+F 1 "GND" H 1955 2477 50  0000 C CNN
+F 2 "" H 1950 2650 50  0001 C CNN
+F 3 "" H 1950 2650 50  0001 C CNN
+	1    1950 2650
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
