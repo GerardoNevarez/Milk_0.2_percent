@@ -1,0 +1,29 @@
+1-RST button
+2-PB3 header
+3-PB4 header
+4-GND - rst button, SW1,SW1 Pad2 NW, RGB header
+5-SW1-pad1-NE
+6-SW2-pad1-NE
+7-RGB header
+8-5V RGB header
+
+
+
+switch holes  2/1.3mm
+
+ 1.524  / 0.8128
+ 
+ 0.762  mm sockets
+ 
+ 
+ 1.397
+ 
+ 
+ 
+ 36.69   17.42 plate hole
+ 
+ 42.55   23    box holes
+ 
+ 
+5mm  to window
+7.95   window height
